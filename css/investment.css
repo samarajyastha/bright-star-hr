@@ -92,7 +92,7 @@
     color: #18304B;
 }
 .investment .service-block-style-two .inner-box:after {
-    content: url(../images/services/shape-6.png);
+    content: url(../assets/images/services/shape-6.png);
 }
 
 /* Read More Button */
@@ -914,7 +914,7 @@
 
 /* Page Header */
 .investment .page_header {
-    background-image: url(../images/background/37.jpg);
+    background-image: url(../assets/images/background/37.jpg);
 }
 .investment .page_header::before {
     display: none;

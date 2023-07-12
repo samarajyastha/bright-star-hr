@@ -19,7 +19,7 @@ function load_scripts()
     wp_register_script('jquery', get_template_directory_uri() . '/js/jquery.js', array(), 1, 1, 1);
     wp_enqueue_script('jquery');
 
-    wp_register_script('popper', get_template_directory_uri() . '/js/vendor/popper.min.js', array(), 1, 1, 1);
+    wp_register_script('popper', get_template_directory_uri() . '/js/popper.min.js', array(), 1, 1, 1);
     wp_enqueue_script('popper');
 
     wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), 1, 1, 1);
@@ -49,6 +49,9 @@ function load_scripts()
     wp_register_script('menu', get_template_directory_uri() . '/js/ma5-menu.min.js', array(), 1, 1, 1);
     wp_enqueue_script('menu');
 
+    wp_register_script('script', get_template_directory_uri() . '/js/script.js', array(), 1, 1, 1);
+    wp_enqueue_script('script');
+
     wp_register_script('custom', get_template_directory_uri() . '/js/custom.js', array(), 1, 1, 1);
     wp_enqueue_script('custom');
 }
@@ -56,3 +59,16 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 
 // Add menu support
 add_theme_support('menus');
+
+// Register menus
+register_nav_menus(
+    array(
+        'main-menu' => __('Main Menu', 'theme'),
+    )
+);
+
+// Add Logo
+add_theme_support('custom-logo');
+
+// Add featured image
+add_theme_support('post-thumbnails');

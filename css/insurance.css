@@ -376,7 +376,7 @@ transition:all 0.5s ease-in-out;
   color: var(--main-color);
 }
 .insurance .service-block-style-two .inner-box:after {
-  content: url(../images/services/shape-7.png);
+  content: url(../assets/images/services/shape-7.png);
 }
 
 
@@ -587,7 +587,7 @@ background-size: cover;
 
 /* Page Header */
 .insurance .page_header {
-  background-image: url(../images/background/33.jpg);
+  background-image: url(../assets/images/background/33.jpg);
   padding: 200px 0px 100px 0px;
 }
 .insurance .page_header::before {

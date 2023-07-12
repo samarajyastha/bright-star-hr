@@ -296,7 +296,7 @@
 	overflow: hidden;
 }
 .second-slider .slide .slide-inner::before {
-	content: url('../images/slider/shape-3.png');
+	content: url('../assets/images/slider/shape-3.png');
 	position: absolute;
 	right: 55%;
 	bottom: -10px;
@@ -304,7 +304,7 @@
 	transition: all 1.5s ease-in-out;
 }
 .second-slider .slide .slide-inner::after {
-	content: url('../images/slider/shape-3-right.png');
+	content: url('../assets/images/slider/shape-3-right.png');
 	position: absolute;
 	left: 60%;
 	bottom: -30px;
@@ -342,14 +342,14 @@
 	padding-bottom: 175px;
 }
 .second-slider .content-column::before {
-	content: url('../images/slider/5.png');
+	content: url('../assets/images/slider/5.png');
 	position: absolute;
 	right: 90%;
 	bottom: -10px;
 	transition: all 1.8s ease-in-out;
 }
 .second-slider .content-column::after {
-	content: url('../images/slider/6.png');
+	content: url('../assets/images/slider/6.png');
 	position: absolute;
 	left: 90%;
 	bottom: -10px;
@@ -472,7 +472,7 @@
 	overflow: hidden;
 }
 .third-slider .slide .slide-inner::after {
-	content: url('../images/slider/graph.png');
+	content: url('../assets/images/slider/graph.png');
 	position: absolute;
 	left: 60%;
 	bottom: -100px;
@@ -813,13 +813,13 @@
 	position: relative;
 	font-weight:700;
 	color: var(--main-color);
-	background-image: url('../images/slider/underline.svg');
+	background-image: url('../assets/images/slider/underline.svg');
 	background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
 }
 /* .fourth-slider h1 span::after {
-	content: url('../images/slider/underline.png');
+	content: url('../assets/images/slider/underline.png');
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -1179,7 +1179,7 @@
 }
 
 .service-block-style-two .inner-box:after {
-	content: url('../images/services/shape-1.png');
+	content: url('../assets/images/services/shape-1.png');
 	position: absolute;
 	top: -40px;
 	right: 0;
@@ -1512,7 +1512,7 @@
     margin: 0px;
 }
 .about-section .experience-counter::after {
-	content: url('../images/services/shape-5.png');
+	content: url('../assets/images/services/shape-5.png');
     position: absolute;
     right: 0%;
     bottom: -9px;
@@ -1692,14 +1692,14 @@
 	border-radius: 15px;
 }
 .business-section.home .inner-container::before {
-	content: url('../images/background/layer-1.svg');
+	content: url('../assets/images/background/layer-1.svg');
 	position: absolute;
 	left: -50px;
 	top: -35px;
 }
 
 .business-section.home .inner-container::after {
-	content: url('../images/background/layer-2.svg');
+	content: url('../assets/images/background/layer-2.svg');
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -1835,7 +1835,7 @@
 	margin-top: var(--space-100);
 }
 .business-section-three .inner-container::before {
-	content: url('../images/background/layer-1.svg');
+	content: url('../assets/images/background/layer-1.svg');
 	position: absolute;
 	left: -50px;
 	top: -35px;
@@ -1844,7 +1844,7 @@
 }
 
 .business-section-three .inner-container::after {
-	content: url('../images/background/layer-2.svg');
+	content: url('../assets/images/background/layer-2.svg');
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -1869,7 +1869,7 @@
 	border-width: 0px;
 }
 .business-section-three .service-block-style-two .inner-box:before {
-    content: url(../images/services/shape-2.png);
+    content: url(../assets/images/services/shape-2.png);
     position: absolute;
     top: -1px;
     right: 0;
@@ -2328,7 +2328,7 @@
 }
 
 .business-section-two::before{
-	content: url(../images/resource/curve-line.svg);
+	content: url(../assets/images/resource/curve-line.svg);
     position: absolute;
     top: -70px;
     left: 0;
@@ -2354,7 +2354,7 @@
 	z-index:-1;
 	width:193px;
 	height:193px;
-	background:url(../images/resource/experience-bg.png);
+	background:url(../assets/images/resource/experience-bg.png);
 	background-repeat:no-repeat;
 }
 
@@ -2989,7 +2989,7 @@
 	line-height: 72px;
 	color: var(--white-color);
 	margin-bottom: 0px;
-	background-image: url('../images/services/bg-2.png');
+	background-image: url('../assets/images/services/bg-2.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

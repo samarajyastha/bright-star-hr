@@ -86,7 +86,7 @@
   color: var(--white-color);
 }
 .business .service-block-style-two .inner-box:after {
-  content: url(../images/services/shape-8.png);
+  content: url(../assets/images/services/shape-8.png);
 }
 
 
@@ -272,7 +272,7 @@
 
 /* Contact Section */
 .business .home-contact-section {
-  background-image: url(../images/background/23.jpg);
+  background-image: url(../assets/images/background/23.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -362,7 +362,7 @@
 
 /* Page Header */
 .business .page_header {
-  background-image: url(../images/background/29.jpg);
+  background-image: url(../assets/images/background/29.jpg);
   padding: 200px 0px 100px 0px;
 }
 .business .page_header::before {
