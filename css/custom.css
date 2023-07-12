@@ -1,0 +1,10 @@
+.main-header .main-menu .navigation > li.current > a {
+  opacity: 1;
+  color: var(--main-color);
+}
+
+.main-header .main-menu .navigation > li:hover > a > span,
+.main-header .main-menu .navigation > li.active > a {
+  opacity: 1;
+  color: var(--color-two);
+}

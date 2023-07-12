@@ -82,39 +82,17 @@
                             <!-- Main Menu -->
                             <nav class="main-menu d-none d-lg-block">
                                 <div class="navbar-collapse collapse clearfix">
-                                    <ul class="navigation clearfix">
-                                        <li class="dropdown"><a href="index.html">Home</a>
-                                            <ul>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="../business/index.html">Business</a></li>
-                                                <li><a href="../insurance/index.html">Insurance</a></li>
-                                                <li><a href="../investment/index.html">Investment</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">Pages</a>
-                                            <ul>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="team.html">Our Team</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">Services</a>
-                                            <ul>
-                                                <li><a href="service.html">Service One</a></li>
-                                                <li><a href="service-2.html">Service Two</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">Blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">Blog Standard</a></li>
-                                                <li><a href="blog-2.html">Blog Grid</a></li>
-                                                <li><a href="blog-3.html">Blog Grid with Sidebar</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
+                                    <?php
+                                    wp_nav_menu(array(
+                                        'theme_location'  => 'main-menu',
+                                        'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
+                                        'container'       => 'ul',
+                                        'menu_class'      => 'navigation clearfix',
+                                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                                        'walker'          => new WP_Bootstrap_Navwalker(),
+                                    ));
+
+                                    ?>
                                 </div>
 
                             </nav>

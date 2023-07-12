@@ -2,116 +2,45 @@
 <!-- Main Section -->
 <section class="main-slider p-0">
     <div class="main-slider-carousel owl-carousel owl-theme">
+        <?php while (have_rows('slider')) : the_row(); ?>
 
-        <!-- Slide One -->
-        <div class="slide" style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/images/slider/1.jpg');">
-            <div class="container">
-                <div class="row clearfix">
-                    <!-- Content Column -->
-                    <div class="content-column col-xl-7 col-lg-7 col-md-10 col-sm-12">
-                        <div class="inner-column">
-                            <div class="title">Intelligent Decision Making</div>
-                            <h1>Convert Business Ideas <br> into <span>Great Opportunities</span></h1>
-                            <div class="text">Jackcerra is a full-service consultation firm with record of winning many <br> successful campaigns. Have a great journey with us</div>
-                            <div class="options-box">
-                                <!-- Button Box -->
-                                <div class="button-box d-flex flex-wrap">
-                                    <a href="#" class="btn">
-                                        <span class="btn-wrap">
-                                            <span class="text-one">Learn More</span>
-                                            <span class="text-two">Learn More</span>
-                                        </span>
-                                    </a>
-                                    <a href="#" class="btn btn-three">
-                                        <span class="btn-wrap">
-                                            <span class="text-one">Get Service</span>
-                                            <span class="text-two">Get Service</span>
-                                        </span>
-                                    </a>
+            <!-- Slider -->
+            <div class="slide" style="background-image: url('<?php echo get_sub_field('image')['url']; ?>');">
+                <div class="container">
+                    <div class="row clearfix">
+                        <!-- Content Column -->
+                        <div class="content-column col-xl-7 col-lg-7 col-md-10 col-sm-12">
+                            <div class="inner-column">
+                                <div class="title"><?php echo get_sub_field('small-title'); ?></div>
+                                <h1><?php echo get_sub_field('title'); ?></h1>
+                                <div class="text"><?php echo get_sub_field('content'); ?></div>
+                                <div class="options-box">
+                                    <!-- Button Box -->
+                                    <div class="button-box d-flex flex-wrap">
+                                        <a href="#" class="btn">
+                                            <span class="btn-wrap">
+                                                <span class="text-one">Learn More</span>
+                                                <span class="text-two">Learn More</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="btn btn-three">
+                                            <span class="btn-wrap">
+                                                <span class="text-one">Get Service</span>
+                                                <span class="text-two">Get Service</span>
+                                            </span>
+                                        </a>
+                                    </div>
+
                                 </div>
-
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- End Slide One -->
+            <!-- End Slider -->
 
-        <!-- Slide Two -->
-        <div class="slide" style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/images/slider/2.jpg');">
-            <div class="container">
-                <div class="row clearfix">
-                    <!-- Content Column -->
-                    <div class="content-column col-xl-7 col-lg-7 col-md-10 col-sm-12">
-                        <div class="inner-column">
-                            <div class="title">Best Consultation Service</div>
-                            <h1>We appreciate Unique <br> <span>Business Ideas</span> from you</h1>
-                            <div class="text">Jackcerra is a full-service consultation firm with record <br> of winning many successful campaigns.</div>
-                            <div class="options-box">
-                                <!-- Button Box -->
-                                <div class="button-box d-flex flex-wrap">
-                                    <a href="#" class="btn">
-                                        <span class="btn-wrap">
-                                            <span class="text-one">Learn More</span>
-                                            <span class="text-two">Learn More</span>
-                                        </span>
-                                    </a>
-                                    <a href="#" class="btn btn-two">
-                                        <span class="btn-wrap">
-                                            <span class="text-one">Get Service</span>
-                                            <span class="text-two">Get Service</span>
-                                        </span>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- End Slide Two -->
-
-        <!-- Slide Three -->
-        <div class="slide" style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/images/slider/3.jpg');">
-            <div class="container">
-                <div class="row clearfix">
-                    <!-- Content Column -->
-                    <div class="content-column col-xl-7 col-lg-7 col-md-10 col-sm-12">
-                        <div class="inner-column">
-                            <div class="title">Intelligent Decision Making</div>
-                            <h1>Let’s Initiate a new <br> <span>Business Venture</span> </h1>
-                            <div class="text">Jackcerra is a full-service consultation firm with record <br> of winning many successful campaigns.</div>
-                            <div class="options-box">
-                                <!-- Button Box -->
-                                <div class="button-box d-flex flex-wrap">
-                                    <a href="#" class="btn btn-three">
-                                        <span class="btn-wrap">
-                                            <span class="text-one">Learn More</span>
-                                            <span class="text-two">Learn More</span>
-                                        </span>
-                                    </a>
-                                    <a href="#" class="btn btn-two">
-                                        <span class="btn-wrap">
-                                            <span class="text-one">Get Service</span>
-                                            <span class="text-two">Get Service</span>
-                                        </span>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- End Slide Three -->
-
-
+        <?php endwhile; ?>
 
     </div>
 </section>
